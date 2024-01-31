@@ -2,7 +2,7 @@ const express= require("express");
 const dotenv = require("dotenv").config();
 const database= require("./config/dbConnection");
 const bodyParser = require("body-parser");
-const session = require("express-session");
+const session = require("cookie-session");
 
 const app=express();
 const port =process.env.port;  //now port is coming from a new file .env which will have all the vars so that some other user may use them.
